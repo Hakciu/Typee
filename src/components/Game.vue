@@ -5,11 +5,11 @@
   import { useUserStore } from '@/stores/users'
   import { useRankingStore } from '@/stores/game'
   import gifs from '../data/gifs.json'
-  import polish from '../data/dictionary/polish'
-  import english from '../data/dictionary/english'
-  import germany from '../data/dictionary/germany'
-  import spanish from '../data/dictionary/spanish'
-  import french from '../data/dictionary/french'
+  import polish from '../data/dictionary/polish.js'
+  import english from '../data/dictionary/english.js'
+  import germany from '../data/dictionary/germany.js'
+  import spanish from '../data/dictionary/spanish.js'
+  import french from '../data/dictionary/french.js'
 
   const userStore = useUserStore()
   const rankingStore = useRankingStore()
