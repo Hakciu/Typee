@@ -11,6 +11,14 @@
   import spanish from '../data/dictionary/spanish.js'
   import french from '../data/dictionary/french.js'
 
+  const languages = {
+    polish,
+    english,
+    germany,
+    spanish,
+    french,
+  }
+
   const userStore = useUserStore()
   const rankingStore = useRankingStore()
 
@@ -301,11 +309,11 @@
       console.log('Uruchamianie algorytmu adaptacyjnego')
       // Wybierz słowa na podstawie historii błędów
       const errorWords = selectWordsBasedOnErrorHistory(
-        eval(selectedLanguage.value),
+        languages[selectedLanguage.value],
         adaptiveWordsCount
       )
       // Dodaj resztę słów
-      const randomWords = shuffle(eval(selectedLanguage.value)).slice(
+      const randomWords = shuffle(languages[selectedLanguage.value]).slice(
         0,
         randomWordsCount
       )
@@ -313,7 +321,10 @@
       words = words.concat(errorWords, randomWords)
     } else {
       console.log('Uruchamianie losowego wyboru słów')
-      words = shuffle(eval(selectedLanguage.value)).slice(0, wordCount.value)
+      words = shuffle(languages[selectedLanguage.value]).slice(
+        0,
+        wordCount.value
+      )
     }
 
     // Wymieszaj wszystkie wybrane słowa
