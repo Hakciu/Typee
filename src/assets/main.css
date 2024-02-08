@@ -1,0 +1,118 @@
+@import './base.css';
+
+a {
+  text-decoration: none;
+  color: #eceef5;
+}
+
+a:hover {
+  color: #98c379;
+}
+
+.btn {
+  font-size: 1.2rem;
+  background: #262a35;
+  color: #98c379;
+  padding: 10px 20px;
+  border-radius: 1rem;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 1rem;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn:hover {
+  background: #98c379;
+  color: #262a35;
+}
+
+.btn2 {
+  font-size: 1.2rem;
+  background: #98c379;
+  color: #262a35;
+  padding: 10px 20px;
+  border-radius: 1rem;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 1rem;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn2:hover {
+  background: #262a35;
+  color: #98c379;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #1e232b #3c3e48;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #3c3e48;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1e232b;
+  border-radius: 20px;
+  border: 3px solid #000000;
+}
+
+/* ===== Upload Modal CSS ===== */
+.uploadModal .n-dialog__title {
+  color: #eceef5 !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cancel */
+.uploadModal .n-button--default-type,
+.uploadModal .n-button--ghost {
+  background-color: #2e343e !important;
+  color: #adcfda !important;
+  border: #5e5f62 solid 1px !important;
+}
+
+/* Submit */
+.uploadModal .n-button--primary-type {
+  background-color: #98c379 !important;
+  color: #2e343e !important;
+}
+
+/* File Upload */
+.n-upload-file,
+.n-upload-file--error-status,
+.n-upload-file--text-type {
+  color: #adcfda !important;
+}
+
+.n-upload-file:hover,
+.n-upload-file--error-status:hover,
+.n-upload-file--text-type:hover {
+  background-color: #262a35 !important;
+}
+
+.n-upload-file-info__name {
+  color: #adcfda !important;
+}
+
+.n-base-icon {
+  color: #adcfda !important;
+}
